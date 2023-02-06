@@ -10,14 +10,17 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.10.4",
     "@wai-ri/core": "^0.0.94",
     "@wai-ri/react": "^0.0.94",
     "antd": "^5.1.7",
     "classnames": "^2.3.2",
     "framer-motion": "^9.0.1",
+    "leva": "^0.9.34",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",
+    "three": "^0.149.0",
     "ulid": "^2.3.0",
     "usehooks-ts": "^2.9.1"
   },
