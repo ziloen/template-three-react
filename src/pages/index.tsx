@@ -2,6 +2,11 @@ import { OrbitControls } from '@react-three/drei'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Leva, folder, useControls } from 'leva'
 
+// TODO:
+// 1. 雷达转圈扫描效果
+// 2. 爆炸震荡波效果
+// 3. 仿 GitHub 地球效果
+
 export default function Index() {
   const controls = useControls({
     number: 3,
