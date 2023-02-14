@@ -7,6 +7,22 @@ import { Leva, folder, useControls } from 'leva'
 // 2. 爆炸震荡波效果
 // 3. 仿 GitHub 地球效果
 
+// Example
+// https://codepen.io/bsehovac/pen/EMyWVv
+// https://codepen.io/radixzz/pen/PRaRZB
+// https://codepen.io/sanprieto/pen/XWNjBdb
+// https://codepen.io/Yakudoo/pen/YGxYej
+// https://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/
+// https://github.com/wwwtyro/Astray
+// https://codepen.io/pizza3/pen/pobevYW
+// https://codepen.io/ko-yelie/pen/LqXWWx
+// https://codepen.io/xdesro/pen/JxOrqe
+// https://codepen.io/mwmwmw/pen/VgemeN
+// https://codepen.io/ReGGae/pen/bmyYEj
+// https://codepen.io/zadvorsky/pen/PNXbGo
+
+
+
 export default function Index() {
   const controls = useControls({
     number: 3,
