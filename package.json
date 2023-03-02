@@ -10,31 +10,31 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@react-three/drei": "^9.56.27",
+    "@react-three/drei": "^9.57.0",
     "@react-three/fiber": "^8.11.5",
     "@react-three/postprocessing": "^2.7.0",
     "@wai-ri/core": "^0.0.96",
     "@wai-ri/react": "^0.0.96",
-    "antd": "^5.2.2",
+    "antd": "^5.2.3",
     "classnames": "^2.3.2",
-    "framer-motion": "^10.0.0",
-    "framer-motion-3d": "^10.0.0",
+    "framer-motion": "^10.0.1",
+    "framer-motion-3d": "^10.0.1",
     "leva": "^0.9.34",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.1",
-    "three": "^0.150.0",
+    "react-router-dom": "^6.8.2",
+    "three": "^0.150.1",
     "ulid": "^2.3.0",
     "usehooks-ts": "^2.9.1"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.16",
     "@testing-library/react": "^14.0.0",
-    "@types/node": "^18.14.1",
+    "@types/node": "^18.14.4",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/three": "^0.149.0",
-    "@unocss/reset": "^0.50.1",
+    "@unocss/reset": "^0.50.3",
     "@vitejs/plugin-react-swc": "^3.2.0",
     "@ziloen/eslint-config": "^0.0.84",
     "@ziloen/eslint-config-format": "^0.0.84",
@@ -45,11 +45,11 @@
     "sass": "^1.58.3",
     "typescript": "^4.9.5",
     "typescript-lib-enhancer": "^1.0.7",
-    "unocss": "^0.50.1",
+    "unocss": "^0.50.3",
     "unplugin-auto-import": "^0.15.0",
     "vite": "^4.1.4",
     "vite-plugin-pages": "^0.28.0",
-    "vitest": "^0.29.1"
+    "vitest": "^0.29.2"
   },
   "eslintConfig": {
     "extends": [
