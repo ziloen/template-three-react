@@ -1,12 +1,12 @@
 import {
   defineConfig,
-  presetAttributify,
   presetIcons,
   presetUno,
   presetWebFonts,
-  transformerDirectives
-  // transformerVariantGroup,
+  transformerDirectives,
+  transformerVariantGroup,
 } from 'unocss'
+import { presetZiloen } from 'unocss-preset-ziloen'
 
 export default defineConfig({
   shortcuts: [
@@ -14,8 +14,8 @@ export default defineConfig({
     ['icon-btn', 'text-[0.9em] inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600']
   ],
   presets: [
+    presetZiloen(),
     presetUno(),
-    // presetAttributify(),
     presetIcons({
       scale: 1.2,
       warn: true
@@ -29,7 +29,7 @@ export default defineConfig({
     })
   ],
   transformers: [
-    transformerDirectives()
-    // transformerVariantGroup(),
+    transformerDirectives(),
+    transformerVariantGroup()
   ]
 })
