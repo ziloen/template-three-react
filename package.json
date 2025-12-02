@@ -1,8 +1,8 @@
 {
   "private": true,
-  "packageManager": "pnpm@7.13.2",
+  "type": "module",
   "scripts": {
-    "dev": "vite --port 3333",
+    "dev": "vite",
     "preview": "vite preview",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -10,61 +10,45 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@react-three/drei": "^9.88.11",
-    "@react-three/fiber": "^8.15.9",
-    "@react-three/postprocessing": "^2.15.10",
-    "@wai-ri/core": "^0.0.101",
-    "@wai-ri/react": "^0.0.101",
-    "antd": "^5.11.0",
-    "classnames": "^2.3.2",
-    "framer-motion": "^10.16.4",
-    "framer-motion-3d": "^10.16.4",
-    "leva": "^0.9.35",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.18.0",
-    "three": "^0.158.0",
-    "ulid": "^2.3.0",
-    "usehooks-ts": "^2.9.1"
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.2",
+    "@react-three/postprocessing": "^3.0.4",
+    "@wai-ri/core": "^0.0.108",
+    "@wai-ri/react": "^0.0.108",
+    "antd": "^6.0.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.25",
+    "framer-motion-3d": "^12.4.13",
+    "leva": "^0.10.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.6",
+    "three": "^0.181.2",
+    "ulid": "^3.0.2",
+    "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.21",
-    "@testing-library/react": "^14.0.0",
-    "@types/node": "^20.8.10",
-    "@types/react": "^18.2.35",
-    "@types/react-dom": "^18.2.14",
-    "@types/three": "^0.158.1",
-    "@unocss/reset": "^0.57.2",
-    "@vitejs/plugin-react-swc": "^3.4.1",
-    "@ziloen/eslint-config": "^0.0.109",
-    "@ziloen/eslint-config-format": "^0.0.110",
-    "eslint": "^8.53.0",
-    "jsdom": "^22.1.0",
+    "@tailwindcss/vite": "^4.1.17",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.181.0",
+    "@vitejs/plugin-react": "^5.1.1",
+    "@ziloen/eslint-config": "^0.1.74",
+    "@ziloen/tailwind-config": "^2.0.13",
+    "eslint": "^9.39.1",
+    "jsdom": "^27.2.0",
     "postcss": "^8.4.31",
-    "postcss-preset-env": "^9.3.0",
-    "sass": "^1.69.5",
-    "ts-lib-enhance": "^1.0.14",
-    "typescript": "^5.2.2",
-    "unocss": "^0.57.2",
-    "unocss-preset-ziloen": "^0.0.4",
-    "unplugin-auto-import": "^0.16.7",
-    "vite": "^4.5.0",
-    "vite-plugin-pages": "^0.31.0",
-    "vitest": "^0.34.6"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@ziloen",
-      "@ziloen/eslint-config-format"
-    ],
-    "parserOptions": {
-      "project": "./tsconfig.json"
-    },
-    "rules": {
-      "react/no-unknown-property": 0
-    },
-    "ignorePatterns": [
-      "*.html"
-    ]
+    "postcss-preset-env": "^10.4.0",
+    "sass": "^1.94.2",
+    "tailwindcss": "^4.1.17",
+    "ts-lib-enhance": "^1.0.22",
+    "typescript": "^5.9.3",
+    "unplugin-auto-import": "^20.3.0",
+    "vite": "^7.2.6",
+    "vite-plugin-pages": "^0.33.1",
+    "vitest": "^4.0.14"
   }
 }

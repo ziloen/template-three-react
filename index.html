@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
   <title>Vitesse Lite</title>
   <meta name="description" content="Opinionated Vite Starter Template">
 </head>
-<body class="font-sans dark:text-white dark:bg-hex-121212">
+
+<body class="font-sans dark:text-white dark:bg-[#121212]">
   <div id="root"></div>
   <script>
-    (function() {
+    (function () {
       const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
       const setting = localStorage.getItem('usehooks-ts-dark-mode')
         ? localStorage.getItem('usehooks-ts-dark-mode') === 'true'
@@ -24,4 +26,5 @@
   </script>
   <script type="module" src="/src/main.tsx"></script>
 </body>
+
 </html>

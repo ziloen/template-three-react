@@ -1,3 +1,5 @@
+@reference "./tailwind.css";
+
 html,
 body,
 #app,
@@ -6,6 +8,10 @@ body,
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-family: --theme(--font-sans);
 }
 
 html.dark {

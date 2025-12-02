@@ -1,0 +1,5 @@
+@import "@ziloen/tailwind-config/preset.css" theme(inline);
+
+@utility btn {
+  @apply px-4 py-1 rounded inline-block bg-green-700 text-white cursor-pointer hover:bg-green-600 disabled:cursor-default disabled:bg-dark-gray-50 disabled:opacity-50 border-none;
+}

@@ -35,7 +35,7 @@ export default function Index() {
   return (
     <>
       <Leva collapsed={false} />
-      <Canvas className='h-full w-full bg-gray-9 text-white'>
+      <Canvas className='size-full bg-dark-gray-800 text-white'>
         <OrbitControls />
         <ambientLight intensity={1} color={'pink'} />
         <BoxModel />
