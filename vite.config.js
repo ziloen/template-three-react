@@ -29,20 +29,20 @@ export default defineConfig({
       imports: [
         {
           react: [
-            'useState',
-            'useEffect',
-            'useMemo',
-            'useLayoutEffect',
-            'useCallback',
-            'useRef',
             'forwardRef',
+            'Suspense',
+            'useCallback',
+            'useEffect',
             'useImperativeHandle',
-            'Suspense'
+            'useLayoutEffect',
+            'useMemo',
+            'useRef',
+            'useState',
           ]
         },
         { 'react-router-dom': ['useNavigate', 'useParams', 'useRoutes'] },
         { 'usehooks-ts': ['useCounter', 'useDarkMode'] },
-        { 'framer-motion': ['motion', 'AnimatePresence'] }
+        { 'motion/react': ['motion', 'AnimatePresence'] }
       ],
       dts: './src/types/auto-imports.d.ts'
     })

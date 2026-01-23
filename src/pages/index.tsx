@@ -1,6 +1,7 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Leva, folder, useControls } from 'leva'
+import { WebGPURenderer } from "three/webgpu"
 
 // TODO:
 // 1. 雷达转圈扫描效果
@@ -35,7 +36,15 @@ export default function Index() {
   return (
     <>
       <Leva collapsed={false} />
-      <Canvas className='size-full bg-dark-gray-800 text-white'>
+      <Canvas className='size-full bg-dark-gray-800 text-white' dpr={[1, 2]} gl={async (props) => {
+        const renderer = new WebGPURenderer({
+          canvas: props.canvas as HTMLCanvasElement,
+          antialias: props.antialias,
+          alpha: props.alpha,
+        })
+        await renderer.init()
+        return renderer
+      }}>
         <OrbitControls />
         <ambientLight intensity={1} color={'pink'} />
         <BoxModel />
