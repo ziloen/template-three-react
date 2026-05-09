@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "baseUrl": ".",
     "module": "ESNext",
     "target": "ESNext",
     // type checking
@@ -25,7 +24,6 @@
     "lib": [
       "DOM",
       "ESNext",
-      "DOM.Iterable"
     ],
     "types": [
       "vite/client",
@@ -34,7 +32,7 @@
     ],
     "paths": {
       "~/*": [
-        "src/*"
+        "./src/*"
       ]
     }
   },

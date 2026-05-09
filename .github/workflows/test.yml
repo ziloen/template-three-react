@@ -17,20 +17,19 @@ jobs:
 
     strategy:
       matrix:
-        node_version: [14.x, 16.x]
         os: [ubuntu-latest, windows-latest]
       fail-fast: false
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v6
 
       - name: Set node version to ${{ matrix.node_version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v6
         with:
-          node-version: ${{ matrix.node_version }}
+          node-version: lts/*
           cache: pnpm
 
       - name: Install
@@ -38,6 +37,9 @@ jobs:
 
       - name: Build
         run: pnpm run build
+
+      - name: Install Playwright Browsers
+        run: pnpm dlx playwright install --with-deps
 
       - name: Test
         run: pnpm run test

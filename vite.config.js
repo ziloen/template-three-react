@@ -2,6 +2,7 @@
 
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
+import { playwright } from '@vitest/browser-playwright'
 import path from 'node:path'
 import PostcssPresetEnv from 'postcss-preset-env'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -58,6 +59,10 @@ export default defineConfig({
 
   // https://github.com/vitest-dev/vitest
   test: {
-    environment: 'jsdom'
-  }
+    browser: {
+      enabled: true,
+      provider: playwright(),
+      instances: [{ browser: 'chromium' }, { browser: 'firefox' }],
+    },
+  },
 })

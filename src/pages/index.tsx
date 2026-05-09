@@ -1,10 +1,8 @@
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
-import { Canvas, extend } from '@react-three/fiber'
+import { Canvas } from '@react-three/fiber'
 import { Leva, folder, useControls } from 'leva'
-import { MeshStandardNodeMaterial, WebGPURenderer } from "three/webgpu"
 
-extend({ MeshStandardNodeMaterial: MeshStandardNodeMaterial })
-
+// #region
 // TODO:
 // 1. 雷达转圈扫描效果
 // 2. 爆炸震荡波效果
@@ -24,7 +22,7 @@ extend({ MeshStandardNodeMaterial: MeshStandardNodeMaterial })
 // https://codepen.io/ReGGae/pen/bmyYEj
 // https://codepen.io/zadvorsky/pen/PNXbGo
 // https://codepen.io/kenjiSpecial/pen/BVxxJa
-
+// #endregion
 
 export default function Index() {
   const controls = useControls({
@@ -38,17 +36,7 @@ export default function Index() {
   return (
     <>
       <Leva collapsed={false} />
-      <Canvas className='size-full' dpr={[1, 2]} gl={async (props) => {
-        const renderer = new WebGPURenderer({
-          canvas: props.canvas as HTMLCanvasElement,
-          antialias: props.antialias,
-          alpha: props.alpha,
-        })
-        await renderer.init()
-        renderer.shadowMap.enabled = true
-        return renderer
-      }}>
-
+      <Canvas className='size-full' dpr={[1, 2]} renderer={{ antialias: true, forceWebGL: false }}>
         <PerspectiveCamera makeDefault position={[0, 0, 7]} fov={50} />
         <OrbitControls makeDefault />
         <CornellBox />
