@@ -1,5 +1,5 @@
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber'
+import { Canvas } from '@react-three/fiber/webgpu'
 import { Leva, folder, useControls } from 'leva'
 
 // #region
@@ -36,7 +36,7 @@ export default function Index() {
   return (
     <>
       <Leva collapsed={false} />
-      <Canvas className='size-full' dpr={[1, 2]} renderer={{ antialias: true, forceWebGL: false }}>
+      <Canvas className='size-full' dpr={[1, 2]} renderer={{ antialias: true }} shadows>
         <PerspectiveCamera makeDefault position={[0, 0, 7]} fov={50} />
         <OrbitControls makeDefault />
         <CornellBox />
